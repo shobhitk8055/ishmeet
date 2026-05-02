@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ishmeet Enterprises | Business Solutions in Pehowa | Supply & Equipment Services</title>
+    <meta name="description" content="Ishmeet Enterprises - Your trusted business partner in Pehowa for supply solutions, equipment services, and business consulting. Contact us today!" />
+    <meta name="keywords" content="business solutions Pehowa, supply chain management Punjab, equipment services Kurukshetra, business consulting, industrial supplies" />
+    <meta name="author" content="Ishmeet Enterprises" />
+    <meta property="og:title" content="Ishmeet Enterprises - Business Solutions Partner in Pehowa" />
+    <meta property="og:description" content="Reliable business services in Pehowa including supply solutions, equipment services, and consulting." />
+    <meta property="og:url" content="https://ismeetenterprises.in/" />
+    <meta property="og:type" content="website" />
+    <link rel="canonical" href="https://ismeetenterprises.in/" />
+    <link rel="alternate" href="https://ismeetenterprises.in/" hreflang="en-in" />
+    <style>
+      :root {
+        --primary: #2c3e50;
+        --secondary: #3498db;
+        --accent: #e74c3c;
+        --light: #ecf0f1;
+        --dark: #2c3e50;
+        --text: #333;
+        --text-light: #7f8c8d;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      /* Header */
+      header {
+        background-color: white;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--primary);
+      }
+
+      .logo span {
+        color: var(--secondary);
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+      }
+
+      .nav-links li {
+        margin-left: 30px;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: var(--text);
+        font-weight: 500;
+        transition: color 0.3s;
+      }
+
+      .nav-links a:hover {
+        color: var(--secondary);
+      }
+
+      .cta-button {
+        background-color: var(--secondary);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: 600;
+        transition: background-color 0.3s;
+      }
+
+      .cta-button:hover {
+        background-color: #2980b9;
+        color: white;
+      }
+
+      /* Hero Section */
+      .hero {
+        background: linear-gradient(135deg, var(--primary), var(--secondary));
+        color: white;
+        padding: 150px 0 100px;
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+      }
+
+      .hero p {
+        font-size: 20px;
+        max-width: 700px;
+        margin: 0 auto 30px;
+      }
+
+      /* Services Section */
+      .services {
+        padding: 80px 0;
+        background-color: var(--light);
+      }
+
+      .section-title {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      .section-title h2 {
+        font-size: 36px;
+        color: var(--primary);
+        margin-bottom: 15px;
+      }
+
+      .section-title p {
+        color: var(--text-light);
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+      }
+
+      .service-card {
+        background-color: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      .service-img {
+        height: 200px;
+        background-color: var(--secondary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 50px;
+      }
+
+      .service-content {
+        padding: 25px;
+      }
+
+      .service-content h3 {
+        font-size: 22px;
+        margin-bottom: 15px;
+        color: var(--primary);
+      }
+
+      /* About Section */
+      .about {
+        padding: 80px 0;
+        display: flex;
+        align-items: center;
+      }
+
+      .about-content {
+        flex: 1;
+        padding-right: 50px;
+      }
+
+      .about-content h2 {
+        font-size: 36px;
+        color: var(--primary);
+        margin-bottom: 20px;
+      }
+
+      .about-content p {
+        margin-bottom: 20px;
+      }
+
+      .about-image {
+        flex: 1;
+        height: 400px;
+        background-color: var(--light);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-light);
+      }
+
+      /* Testimonials */
+      .testimonials {
+        padding: 80px 0;
+        background-color: var(--primary);
+        color: white;
+      }
+
+      .testimonials .section-title h2 {
+        color: white;
+      }
+
+      .testimonial-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+      }
+
+      .testimonial-card {
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 30px;
+        border-radius: 8px;
+      }
+
+      .testimonial-card p {
+        font-style: italic;
+        margin-bottom: 20px;
+      }
+
+      .client-info {
+        display: flex;
+        align-items: center;
+      }
+
+      .client-avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: var(--secondary);
+        margin-right: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+      }
+
+      .client-name {
+        font-weight: 600;
+      }
+
+      .client-title {
+        font-size: 14px;
+        opacity: 0.8;
+      }
+
+      /* Contact Section */
+      .contact {
+        padding: 80px 0;
+      }
+
+      .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 50px;
+      }
+
+      .contact-info h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: var(--primary);
+      }
+
+      .contact-detail {
+        display: flex;
+        margin-bottom: 15px;
+      }
+
+      .contact-icon {
+        margin-right: 15px;
+        color: var(--secondary);
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      .contact-form textarea {
+        height: 150px;
+      }
+
+      .contact-form button {
+        background-color: var(--secondary);
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .contact-form button:hover {
+        background-color: #2980b9;
+      }
+
+      /* Footer */
+      footer {
+        background-color: var(--dark);
+        color: white;
+        padding: 50px 0 20px;
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 30px;
+        margin-bottom: 40px;
+      }
+
+      .footer-col h3 {
+        font-size: 18px;
+        margin-bottom: 20px;
+        position: relative;
+        padding-bottom: 10px;
+      }
+
+      .footer-col h3::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 50px;
+        height: 2px;
+        background-color: var(--secondary);
+      }
+
+      .footer-col p {
+        margin-bottom: 15px;
+        opacity: 0.8;
+      }
+
+      .footer-links {
+        list-style: none;
+      }
+
+      .footer-links li {
+        margin-bottom: 10px;
+      }
+
+      .footer-links a {
+        color: white;
+        text-decoration: none;
+        opacity: 0.8;
+        transition: opacity 0.3s;
+      }
+
+      .footer-links a:hover {
+        opacity: 1;
+      }
+
+      .social-links {
+        display: flex;
+        gap: 15px;
+      }
+
+      .social-links a {
+        color: white;
+        font-size: 20px;
+        opacity: 0.8;
+        transition: opacity 0.3s;
+      }
+
+      .social-links a:hover {
+        opacity: 1;
+      }
+
+      .copyright {
+        text-align: center;
+        padding-top: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        opacity: 0.7;
+        font-size: 14px;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 36px;
+        }
+
+        .hero p {
+          font-size: 18px;
+        }
+
+        .about {
+          flex-direction: column;
+        }
+
+        .about-content {
+          padding-right: 0;
+          margin-bottom: 30px;
+        }
+      }
+      /* Mobile Nav */
+      .hamburger {
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+        cursor: pointer;
+      }
+
+      .hamburger span {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: var(--primary);
+        transition: all 0.3s ease;
+      }
+
+      /* Responsive Navbar */
+      @media (max-width: 768px) {
+        .nav-links {
+          position: fixed;
+          top: 80px;
+          left: -100%;
+          width: 100%;
+          height: calc(100vh - 80px);
+          background-color: white;
+          flex-direction: column;
+          align-items: center;
+          padding: 40px 0;
+          transition: left 0.3s ease;
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-links.active {
+          left: 0;
+        }
+
+        .nav-links li {
+          margin: 15px 0;
+        }
+
+        .hamburger {
+          display: flex;
+        }
+
+        .hamburger.active span:nth-child(1) {
+          transform: translateY(9px) rotate(45deg);
+        }
+
+        .hamburger.active span:nth-child(2) {
+          opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+          transform: translateY(-9px) rotate(-45deg);
+        }
+      }
+
+      /* Image styles */
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .service-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .client-avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .contact-icon img {
+        width: 30px;
+        height: 30px;
+      }
+
+      .social-links img {
+        width: 24px;
+        height: 24px;
+      }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Ishmeet <span>Enterprises</span></div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact" class="cta-button">Get a Quote</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Your Trusted Business Partner in Pehowa</h1>
+            <p>
+                Ishmeet Enterprises delivers exceptional services tailored to meet
+                your business needs with professionalism and dedication. Serving Pehowa and surrounding areas since 2010.
+            </p>
+            <a href="#contact" class="cta-button" style="font-size: 18px; padding: 15px 30px">Contact Us Today</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Business Services</h2>
+                <p>
+                    We offer comprehensive solutions for industries in Pehowa, Kurukshetra and across Punjab.
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Supply chain management services" width="60" height="60">
+                    </div>
+                    <div class="service-content">
+                        <h3>Supply Chain Solutions</h3>
+                        <p>
+                            Reliable supply chain management and procurement services for industries in Pehowa. We source quality materials at competitive prices.
+                        </p>
+                        <a href="#contact" aria-label="Learn more about supply solutions">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1597852074816-d933c7d2b988?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Industrial equipment services" width="60" height="60">
+                    </div>
+                    <div class="service-content">
+                        <h3>Equipment Services</h3>
+                        <p>
+                            Top-quality industrial equipment sales, rentals, and maintenance services in Punjab. We support manufacturing and agricultural businesses.
+                        </p>
+                        <a href="#contact" aria-label="Learn more about equipment services">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Business consulting services" width="60" height="60">
+                    </div>
+                    <div class="service-content">
+                        <h3>Business Consulting</h3>
+                        <p>
+                            Expert advice and growth strategies for local businesses in Kurukshetra district. Let us help you optimize operations and increase profits.
+                        </p>
+                        <a href="#contact" aria-label="Learn more about business consulting">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1520869562399-e772f042f422?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Telecom Distributorship" width="60" height="60">
+                    </div>
+                    <div class="service-content">
+                        <h3>Telecom Distributorship</h3>
+                        <p>
+                            Authorized telecom distribution services for leading networks. We ensure seamless connectivity and reliable communication solutions for businesses in Pehowa.
+                        </p>
+                        <a href="#contact" aria-label="Learn more about telecom distributorship">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <h2>About Ishmeet Enterprises Pehowa</h2>
+                <p>
+                    Founded in 2010 with a vision to support local businesses, Ishmeet
+                    Enterprises has grown to become a trusted partner for companies
+                    across Pehowa and Kurukshetra district.
+                </p>
+                <p>
+                    Our team of experienced professionals is committed to delivering
+                    exceptional service, quality products, and tailored solutions that
+                    meet your specific business requirements in the Punjab region.
+                </p>
+                <p>
+                    With over a decade of industry experience, we understand the challenges
+                    businesses face in our local market and are dedicated to helping you overcome them.
+                </p>
+                <h3>Why Choose Us?</h3>
+                <ul>
+                    <li>Local business with deep understanding of Pehowa market</li>
+                    <li>Reliable supply chain network across Punjab</li>
+                    <li>Quality equipment from trusted manufacturers</li>
+                    <li>Personalized consulting services</li>
+                    <li>Competitive pricing for local businesses</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Clients Say</h2>
+                <p>
+                    Don't just take our word for it - hear from our satisfied customers across Punjab.
+                </p>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p>
+                        "Ishmeet Enterprises has been instrumental in helping us
+                        streamline our supply chain. Their reliable service and attention
+                        to detail are unmatched in the industry."
+                    </p>
+                    <div class="client-info">
+                        <div class="client-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Amarjeet Singh" width="50" height="50">
+                        </div>
+                        <div>
+                            <div class="client-name">Amarjeet Singh</div>
+                            <div class="client-title">CEO, Punjab Industries</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p>
+                        "The equipment we purchased from Ishmeet has exceeded our
+                        expectations. Their after-sales support is truly exceptional."
+                    </p>
+                    <div class="client-info">
+                        <div class="client-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Priya Khanna" width="50" height="50">
+                        </div>
+                        <div>
+                            <div class="client-name">Priya Khanna</div>
+                            <div class="client-title">
+                                Operations Manager, GreenFields Ltd.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p>
+                        "Their business consulting services helped us identify new growth
+                        opportunities we hadn't considered. Highly recommended!"
+                    </p>
+                    <div class="client-info">
+                        <div class="client-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Rahul Sharma" width="50" height="50">
+                        </div>
+                        <div>
+                            <div class="client-name">Rahul Sharma</div>
+                            <div class="client-title">Director, Sharma & Sons</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Ishmeet Enterprises</h2>
+                <p>
+                    We'd love to hear from you and discuss how we can support your
+                    business in Pehowa and surrounding areas.
+                </p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Our Location</h3>
+                    <div class="contact-detail">
+                        <div class="contact-icon">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2776/2776067.png" alt="Location" width="30" height="30">
+                        </div>
+                        <div>
+                            <p>Guru Nanak Colony</p>
+                            <p>Pehowa - 136128, Haryana</p>
+                            <p>Near Pehowa Bus Stand</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-icon">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3059/3059518.png" alt="Phone" width="30" height="30">
+                        </div>
+                        <div>
+                            <p>+91 99968 44005</p>
+                            <p>+91 79000 78918</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-icon">
+                            <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email" width="30" height="30">
+                        </div>
+                        <div>
+                            <p>ishmeetenterprises1@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-icon">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2088/2088617.png" alt="Business Hours" width="30" height="30">
+                        </div>
+                        <div>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                            <p>Saturday: 10:00 AM - 2:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.789012345678!2d76.5819!3d29.9789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDU4JzQ0LjAiTiA3NsKwMzQnNTQuOSJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" title="Ishmeet Enterprises Location"></iframe>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm" action="/submit-form" method="POST">
+                        <input type="text" name="name" placeholder="Your Name" required aria-label="Your Name">
+                        <input type="email" name="email" placeholder="Your Email" required aria-label="Your Email">
+                        <input type="tel" name="phone" placeholder="Your Phone" aria-label="Your Phone Number">
+                        <select name="service" aria-label="Service Interested In">
+                            <option value="">Select Service</option>
+                            <option value="supply">Supply Solutions</option>
+                            <option value="equipment">Equipment Services</option>
+                            <option value="consulting">Business Consulting</option>
+                            <option value="telecom">Telecom Distributorship</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <textarea name="message" placeholder="Your Message" required aria-label="Your Message"></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Ishmeet Enterprises</h3>
+                    <p>
+                        Your trusted partner for business solutions, quality products, and
+                        exceptional service in Pehowa, Haryana.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://facebook.com/ismeetenterprises" aria-label="Facebook"><img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook" width="24" height="24"></a>
+                        <a href="https://wa.me/919996844005" aria-label="WhatsApp"><img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" width="24" height="24"></a>
+                        <a href="https://linkedin.com/company/ismeetenterprises" aria-label="LinkedIn"><img src="https://cdn-icons-png.flaticon.com/512/124/124011.png" alt="LinkedIn" width="24" height="24"></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Supply Chain Solutions</a></li>
+                        <li><a href="#">Industrial Equipment</a></li>
+                        <li><a href="#">Business Consulting</a></li>
+                        <li><a href="#">Telecom Distributorship</a></li>
+                        <li><a href="#">Custom Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Business Newsletter</h3>
+                    <p>
+                        Subscribe for industry insights and special offers for Pehowa businesses.
+                    </p>
+                    <form id="newsletterForm">
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Your Email"
+                            required
+                            aria-label="Email for newsletter"
+                            style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ccc;"
+                        />
+                        <button
+                            type="submit"
+                            style="background-color: #2c3e50; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; width: 100%;"
+                        >
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Ishmeet Enterprises. All Rights Reserved. | <a href="sitemap.html">Sitemap</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Ishmeet Enterprises",
+      "image": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+      "@id": "",
+      "url": "https://ismeetenterprises.in/",
+      "telephone": "+919996844005",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Guru Nanak Colony",
+        "addressLocality": "Pehowa",
+        "addressRegion": "Haryana",
+        "postalCode": "136128",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 29.9789,
+        "longitude": 76.5819
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/ismeetenterprises",
+        "https://www.linkedin.com/company/ismeetenterprises"
+      ]
+    }
+    </script>
+
+    <script>
+      // Wait for the DOM to be fully loaded
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get the contact form
+        const contactForm = document.querySelector(".contact-form form");
+
+        if (contactForm) {
+          // Add submit event listener to the form
+          contactForm.addEventListener("submit", function (e) {
+            e.preventDefault(); // Prevent the default form submission
+
+            // Get form values
+            const name = contactForm
+              .querySelector('input[type="text"]')
+              .value.trim();
+            const email = contactForm
+              .querySelector('input[type="email"]')
+              .value.trim();
+            const message = contactForm.querySelector("textarea").value.trim();
+
+            // Simple validation
+            if (!name || !email || !message) {
+              alert("Please fill in all required fields.");
+              return;
+            }
+
+            // Validate email format
+            if (!validateEmail(email)) {
+              alert("Please enter a valid email address.");
+              return;
+            }
+
+            // Create a thank you message element
+            const thankYouMessage = document.createElement("div");
+            thankYouMessage.className = "thank-you-message";
+            thankYouMessage.innerHTML = `
+                <h3>Thank You, ${name}!</h3>
+                <p>We have received your message and will reach out to you soon.</p>
+                <p>You can also contact us directly at <strong>ishmeetenterprises1@gmail.com</strong> or call us at <strong>+91 99968 44005</strong>.</p>
+            `;
+
+            // Style the thank you message (you can also add this to your CSS)
+            thankYouMessage.style.backgroundColor = "#f8f9fa";
+            thankYouMessage.style.padding = "30px";
+            thankYouMessage.style.borderRadius = "8px";
+            thankYouMessage.style.marginTop = "20px";
+            thankYouMessage.style.textAlign = "center";
+            thankYouMessage.style.border = "1px solid #e9ecef";
+
+            // Replace the form with the thank you message
+            contactForm.parentNode.replaceChild(thankYouMessage, contactForm);
+
+            // In a real implementation, you would send the form data to a server here
+            // For example:
+            // sendFormData(name, email, message);
+          });
+        }
+
+        // Email validation function
+        function validateEmail(email) {
+          const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          return re.test(email);
+        }
+
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (hamburger && navLinks) {
+            hamburger.addEventListener('click', function() {
+                this.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+
+            // Close menu when clicking on a link
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('active');
+                    navLinks.classList.remove('active');
+                });
+            });
+        }
+
+        // In a real implementation, you would have a function to send the data to your server
+        /*
+        function sendFormData(name, email, message) {
+            fetch('your-server-endpoint', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    name: name,
+                    email: email,
+                    message: message
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+        }
+        */
+      });
+    </script>
+</body>
+</html>
