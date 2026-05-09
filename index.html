@@ -13,8 +13,8 @@
     <meta property="og:type" content="website" />
     <link rel="canonical" href="https://ismeetenterprises.in/" />
     <link rel="alternate" href="https://ismeetenterprises.in/" hreflang="en-in" />
-    <link rel="icon" type="image/jpeg" href="https://p7.hiclipart.com/preview/742/347/721/ie-university-ie-business-school-school-of-foreign-service-graduate-management-admission-test-master-of-business-administration-internet-explorer-thumbnail.jpg">
-
+<!-- Favicon -->
+<link rel="icon" type="image/jpeg" href="https://i.ibb.co/KpzgbLtd/Whats-App-Image-2026-05-09-at-7-56-25-PM.jpg">
     <style>
       :root {
         --primary: #2c3e50;
@@ -60,15 +60,18 @@
         padding: 20px 0;
       }
 
-      .logo {
-        font-size: 24px;
-        font-weight: 700;
-        color: var(--primary);
-      }
+      .logo img {
+          height: 65px;
+          width: auto;
+          object-fit: contain;
+          display: block;
+        }
 
-      .logo span {
-        color: var(--secondary);
+    @media (max-width: 768px) {
+      .logo img {
+        height: 50px;
       }
+    }
 
       .nav-links {
         display: flex;
@@ -520,7 +523,12 @@
     <header>
         <div class="container">
             <nav>
-                <div class="logo">Ishmeet <span>Enterprises</span></div>
+                <<div class="logo">
+                    <img 
+                        src="https://i.ibb.co/KpzgbLtd/Whats-App-Image-2026-05-09-at-7-56-25-PM.jpg" 
+                        alt="Ishmeet Enterprises Logo"
+                    >
+                </div>
                 <div class="hamburger">
                     <span></span>
                     <span></span>
